@@ -13,8 +13,9 @@ print('--------------')
 print(t1.pop('dravi'))
 # to get any row info in table
 
-a = t1.get('hima')
-print(a)
+# a = t1.get('hima')
+
+
 
 
 

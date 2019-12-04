@@ -2,15 +2,15 @@ import pandas as p
 
 #  iloc behavioural attributes
 
-data = (p.Series([1, 2, 3]), p.Series([4, 5, 6]))
-index = ['A', 'B']
+data = (p.Series([1, 2, 3], index=['A', 'B', 'C']), p.Series([4, 5, 6], index=['A', 'B', 'C']))
 df = p.DataFrame(data)
 
-df.set_index(index)
-
-
-
+print(type(df))
 print(df)
+
+
+# a = df.loc['B']
+# print(a)
 
 # Single selections using iloc and DataFrame
 # # Rows:
