@@ -6,8 +6,8 @@ Extra index added later is not a valid index .
 '''
 
 # ADD
-s1 = p.Series([1, 2, 3], index=['b', 'c', 'd'])
-s2 = p.Series([10, 20, 30], index=['b', 'c', 'd'])
+s1 = p.Series([1, 2, 3], index=['a', 'c', 'd'])
+s2 = p.Series([10, 20, 30], index=['a', 'c', 'd'])
 
 t = p.DataFrame({'Faiz': s1, 'Dravi': s2})
 print(t)
@@ -21,7 +21,10 @@ print(t)
 
 # DEL
 
-
 print(t.get('Pari'))
 del (t['Pari'])
 print(t)
+print('--------------')
+
+# Pop
+print(t.pop('Faiz'))
