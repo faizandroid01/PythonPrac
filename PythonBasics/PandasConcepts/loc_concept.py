@@ -1,36 +1,57 @@
 import pandas as p
 
-#  iloc behavioural attributes
+s1 = p.Series([1, 2, 3], index=['A', 'B', 'C'])
+s2 = p.Series([4, 5, 6], index=['A', 'B', 'C'])
+s3 = p.Series([7, 8, 9], index=['A', 'B', 'C'])
 
-data = (p.Series([1, 2, 3], index=['A', 'B', 'C']), p.Series([4, 5, 6], index=['A', 'B', 'C']))
-df = p.DataFrame(data)
-
+df = p.DataFrame({"Faiz": s1, "Dravi": s2, "Pari": s3})
 print(type(df))
 print(df)
 
+#  loc behavioural attributes
 
-# a = df.loc['B']
-# print(a)
+a = df.loc['A']
+print(a)
 
-# Single selections using iloc and DataFrame
-# # Rows:
-# data.iloc[0]  # first row of data frame (Aleshia Tomkiewicz) - Note a Series data type output.
-# data.iloc[1]  # second row of data frame (Evan Zigomalas)
-# data.iloc[-1]  # last row of data frame (Mi Richan)
-# # Columns:
-# data.iloc[:, 0]  # first column of data frame (first_name)
-# data.iloc[:, 1]  # second column of data frame (last_name)
-# data.iloc[:, -1]  # last column of data frame (id)
+#  iloc behavioural attributes
 
-# Multiple row and column selections using iloc and DataFrame
-# data.iloc[0:5]  # first five rows of dataframe
-# data.iloc[:, 0:2]  # first two columns of data frame with all rows
-# data.iloc[[0, 3, 6, 24], [0, 5, 6]]  # 1st, 4th, 7th, 25th row + 1st 6th 7th columns.
-# data.iloc[0:5, 5:8]  # first 5 rows and 5th, 6th, 7th columns of data frame (county -> phone1).
+print(df.iloc[1])
+print(df.iloc[-1])
+print('-----------')
+print(df.iloc[:])
+print('-----------')
 
-# Note that .iloc returns a Pandas Series when one row is selected,
+print(df.iloc[2, 2])
+print(df.iloc[:, 1])
+print('---------------')
+print(df.iloc[:, :])
+print(df.iloc[-1, :])
+print(df.iloc[:, 0:2])
+print(df.iloc[[0, 2], :])
+print('----------------')
+print(df.iloc[:, :])
+print(df.iloc[[0, 2], [0, 2, -1]])
+print(df.iloc[0:1, 1:2])
+print('--------------------------------')
+# Note that .iloc returns a Pandas Series when only one row is selected,
 # and a Pandas DataFrame when multiple rows are selected, or if any column in full is selected.
 # To counter this, pass a single-valued list if you require DataFrame output.
 # explained below
 
-# print(type)
+ex1 = df.iloc[1]
+print(type(ex1))  # will be Series
+print(ex1)
+# To get ex1 as DataFrame
+
+ex2 = df.iloc[[1]]
+print(type(ex2))  # return as DataFrame
+print(ex2)
+
+print('---------------')
+ex3 = df.iloc[0:1, 1:2]
+print(type(ex3))  # return as DataFrame
+print(ex3)
+
+ex4 = df.iloc[0:2]
+print(type(ex4))  # return as DataFrame
+print(ex4)
