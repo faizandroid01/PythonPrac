@@ -7,6 +7,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="PractiseProgs" />
+    <orderEntry type="module" module-name="PythonDataAnalysis" />
+    <orderEntry type="module" module-name="PythonWebScrapping" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

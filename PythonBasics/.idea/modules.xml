@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../PractiseProgs/.idea/PractiseProgs.iml" filepath="$PROJECT_DIR$/../PractiseProgs/.idea/PractiseProgs.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PythonBasics.iml" filepath="$PROJECT_DIR$/.idea/PythonBasics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonDataAnalysis/.idea/PythonDataAnalysis.iml" filepath="$PROJECT_DIR$/../PythonDataAnalysis/.idea/PythonDataAnalysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonWebScrapping/.idea/PythonWebScrapping.iml" filepath="$PROJECT_DIR$/../PythonWebScrapping/.idea/PythonWebScrapping.iml" />
     </modules>
   </component>
 </project>
