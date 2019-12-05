@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../OpenCV/.idea/OpenCV.iml" filepath="$PROJECT_DIR$/../OpenCV/.idea/OpenCV.iml" />
       <module fileurl="file://$PROJECT_DIR$/../PractiseProgs/.idea/PractiseProgs.iml" filepath="$PROJECT_DIR$/../PractiseProgs/.idea/PractiseProgs.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PythonBasics.iml" filepath="$PROJECT_DIR$/.idea/PythonBasics.iml" />
       <module fileurl="file://$PROJECT_DIR$/../PythonDataAnalysis/.idea/PythonDataAnalysis.iml" filepath="$PROJECT_DIR$/../PythonDataAnalysis/.idea/PythonDataAnalysis.iml" />
