@@ -10,7 +10,6 @@ def insertionSort(a):
             j -= 1
     return a
 
-
 class Sample:
     a = insertionSort([15, 2, 14, 56, 11, 23])
     print(a)
