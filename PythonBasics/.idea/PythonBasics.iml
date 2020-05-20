@@ -10,6 +10,7 @@
     <orderEntry type="module" module-name="PythonDataAnalysis" />
     <orderEntry type="module" module-name="PythonWebScrapping" />
     <orderEntry type="module" module-name="OpenCV" />
+    <orderEntry type="module" module-name="DataStructureConcepts" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

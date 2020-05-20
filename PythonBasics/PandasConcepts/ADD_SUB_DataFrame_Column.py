@@ -18,7 +18,6 @@ print(t)
 
 # if in the starting it would have added , it would have taken that
 
-
 # DEL
 
 print(t.get('Pari'))

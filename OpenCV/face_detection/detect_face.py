@@ -12,7 +12,7 @@ gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # search the coordinates of the image
 faces = face_cascade.detectMultiScale(gray_img, scaleFactor=1.05, minNeighbors=5)
 
-# print(type(faces))
+print(type(faces))
 print(faces)  # [[800 198 723 723]]
 
 # draw a rectangle
