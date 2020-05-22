@@ -10,13 +10,12 @@
 #
 # print(-1)
 
-a = "1 2 3 4 5"
+# a = "1 2 3 4 5"
 # b = a.split(' ')
 #
 # print(b)
 # print(type(b))
 
-print(a[0])
-print(a[1])
-print(a[2])
+n, s = map(int, input().split())
 
+print(n,s)
